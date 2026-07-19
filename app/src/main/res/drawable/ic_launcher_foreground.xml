@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Gemmark mark: gauge dial + spark swoosh. Geometry is the official 512-px
+  SVG (monochome.svg); gradients sampled from the color spec (icon-透明.png).
+  Viewport 674 with translate 81 keeps the art inside the 66/108 safe zone.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="674"
+    android:viewportHeight="674">
+    <group
+        android:translateX="81"
+        android:translateY="81">
+        <!-- dial arc (drawn as a filled ring segment in the source art) -->
+        <path android:pathData="M349.957,433.295C352.424,437.745 358.044,439.371 362.378,436.704C397.287,415.223 424.922,383.605 441.521,345.969C459.362,305.519 463.473,260.341 453.228,217.335C442.982,174.328 418.943,135.857 384.78,107.795C350.618,79.734 308.21,63.624 264.033,61.927C219.855,60.23 176.336,73.038 140.121,98.395C103.906,123.753 76.986,160.266 63.471,202.36C49.956,244.453 50.589,289.814 65.273,331.514C78.936,370.312 104.064,403.957 137.221,428.054C141.337,431.045 147.066,429.855 149.867,425.607C152.668,421.359 151.479,415.664 147.377,412.654C117.571,390.785 94.979,360.396 82.653,325.393C69.305,287.488 68.73,246.256 81.015,207.993C93.3,169.73 117.771,136.539 150.69,113.489C183.609,90.439 223.168,78.797 263.325,80.339C303.482,81.882 342.031,96.526 373.085,122.034C404.138,147.542 425.99,182.512 435.303,221.605C444.616,260.698 440.879,301.764 424.662,338.534C409.686,372.487 384.829,401.053 353.434,420.57C349.113,423.257 347.49,428.845 349.957,433.295Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="97"
+                    android:startY="60"
+                    android:endX="400"
+                    android:endY="440"
+                    android:startColor="#FF8BDEFF"
+                    android:endColor="#FFE6F8FF" />
+            </aapt:attr>
+        </path>
+        <!-- spark swoosh -->
+        <path android:pathData="M211.563,218.377C308.019,296.486 414.406,165.109 414.406,165.109C308.019,296.486 402.969,373.375 402.969,373.375C308.019,296.486 204.456,424.375 204.456,424.375C308.019,296.486 211.563,218.377 211.563,218.377Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="218"
+                    android:startY="408"
+                    android:endX="400"
+                    android:endY="175"
+                    android:startColor="#FF2B8CD7"
+                    android:centerColor="#FF88C0EA"
+                    android:endColor="#FFE6F3FC" />
+            </aapt:attr>
+        </path>
+        <!-- ticks (per-position tints follow the dial gradient) -->
+        <path
+            android:pathData="M257.5,90 L257.5,113.5"
+            android:strokeColor="#FF92E0FF"
+            android:strokeWidth="10"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M144,139 L160.617,155.617"
+            android:strokeColor="#FF8DDFFF"
+            android:strokeWidth="10"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M175,126 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+            android:fillColor="#FF8DDFFF" />
+        <path
+            android:pathData="M199,112 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+            android:fillColor="#FF90E0FF" />
+        <path
+            android:pathData="M227,104 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+            android:fillColor="#FF92E0FF" />
+        <path
+            android:pathData="M369.617,139 L353,155.617"
+            android:strokeColor="#FFA9E7FF"
+            android:strokeWidth="10"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M426.5,256 L403,256"
+            android:strokeColor="#FFC9F0FF"
+            android:strokeWidth="10"
+            android:strokeLineCap="round" />
+    </group>
+</vector>

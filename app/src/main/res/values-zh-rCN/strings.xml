@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">Gemmark</string>
+
+    <!-- Home -->
+    <string name="home_settings">设置</string>
+    <string name="home_run_benchmark">开始跑分</string>
+    <string name="home_recent_runs">历史记录</string>
+    <string name="home_no_runs_title">暂无测试记录</string>
+    <string name="home_no_runs_caption">完成首次跑分后，结果将显示在这里。</string>
+    <string name="home_benchmark_in_progress">跑分进行中</string>
+    <string name="home_active_run_detail">%1$s · 第 %2$d 轮</string>
+    <string name="home_open">打开</string>
+    <string name="home_gemmark_score">GEMMARK 得分</string>
+    <string name="home_device_score">设备总分</string>
+    <string name="home_device_run_title">标准测试 · 双模型</string>
+    <string name="home_coverage_partial">部分覆盖 — 仅有一个模型可用</string>
+    <string name="home_coverage_mock">模拟演示 — 非真实设备得分</string>
+    <string name="home_device">设备</string>
+    <string name="home_device_build">构建 %1$s · API %2$d</string>
+    <string name="home_device_build_aicore">构建 %1$s · API %2$d · AICore %3$s</string>
+    <string name="home_test_conditions">测试条件</string>
+    <string name="home_status_needs_retest">需要重测</string>
+    <string name="home_status_aborted">已中止</string>
+    <string name="home_status_failed">失败</string>
+    <string name="home_toks_median">tok/s 中位数</string>
+
+    <!-- Preflight check labels (mapped from PreflightCheck.id) -->
+    <string name="preflight_battery">电量 ≥ %1$d%%</string>
+    <string name="preflight_charging">未连接充电器</string>
+    <string name="preflight_thermal">设备温度正常</string>
+    <string name="preflight_powersave">省电模式已关闭</string>
+    <string name="preflight_brightness">固定亮度与刷新率</string>
+    <string name="preflight_background">已关闭后台应用</string>
+    <string name="preflight_room">室温保持一致</string>
+
+    <!-- Start benchmark sheet -->
+    <string name="sheet_standard_test">标准测试</string>
+    <string name="sheet_standard_test_desc">在两个 Gemma 4 模型上依次运行完整套件（先 Fast 后 Full），综合为一个设备总分。约 12 分钟，请保持应用前台。</string>
+    <string name="sheet_partial_note">仅有一个模型就绪 — 设备总分将标记为部分覆盖。</string>
+    <string name="sheet_mock_note">此设备上 AICore 模型不可用 — 将改为运行模拟演示。</string>
+    <string name="sheet_start">开始</string>
+
+    <!-- Preflight dialog -->
+    <string name="dialog_preflight_title">测试条件未满足</string>
+    <string name="dialog_preflight_item">• %1$s — %2$s</string>
+    <string name="dialog_preflight_note">本次运行的结果将无法与符合条件的运行进行比较。</string>
+    <string name="dialog_preflight_run_anyway">仍要运行</string>
+    <string name="dialog_preflight_cancel">取消</string>
+
+    <!-- Run screen -->
+    <string name="run_headline_loading">正在加载模型…</string>
+    <string name="run_headline_warmup">预热中…</string>
+    <string name="run_headline_testing">测试进行中…</string>
+    <string name="run_headline_paused">已暂停</string>
+    <string name="run_headline_cooldown">降温中</string>
+    <string name="run_model_step">模型 %1$d/%2$d</string>
+    <string name="run_headline_saving">正在保存报告…</string>
+    <string name="run_headline_default">跑分</string>
+    <string name="run_phase">阶段 %1$d/%2$d</string>
+    <string name="run_ring_warmup">预热 %1$d</string>
+    <string name="run_ring_round">第 %1$d 轮</string>
+    <string name="run_stat_ttft">TTFT</string>
+    <string name="run_stat_decode">解码</string>
+    <string name="run_live_results">实时成绩</string>
+    <string name="run_thermal">温度</string>
+    <string name="run_thermal_status">热状态：%1$s</string>
+    <string name="run_power_draw">功耗</string>
+    <string name="run_activity_log">活动日志</string>
+    <string name="run_log_waiting">等待事件…</string>
+    <string name="unit_tok_s">tok/s</string>
+    <string name="unit_ms">ms</string>
+    <string name="run_pause">暂停</string>
+    <string name="run_resume">继续</string>
+    <string name="run_stop">停止</string>
+    <string name="run_no_report_saved">跑分已结束，但未保存报告。</string>
+
+    <!-- Run dialogs -->
+    <string name="dialog_run_failed_title">跑分失败</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_stop_title">停止跑分？</string>
+    <string name="dialog_stop_body">本次运行将标记为已中止并保存。已完成的轮次数据仍会保留，但该报告不会计入排行榜。</string>
+    <string name="dialog_stop_confirm">停止运行</string>
+    <string name="dialog_stop_keep">继续运行</string>
+
+    <!-- Phase chip labels (run screen ring) -->
+    <string name="chip_phase_loading">加载中</string>
+    <string name="chip_phase_warmup">预热</string>
+    <string name="chip_phase_measuring">正常</string>
+    <string name="chip_phase_paused">已暂停</string>
+    <string name="chip_phase_saving">保存中</string>
+
+    <!-- Round status chips -->
+    <string name="chip_status_ok">正常</string>
+    <string name="chip_status_retried">已重试</string>
+    <string name="chip_status_short">过短</string>
+    <string name="chip_status_fallback">回退</string>
+    <string name="chip_status_error">错误</string>
+
+    <!-- Result screen -->
+    <string name="result_back">返回</string>
+    <string name="result_report_not_found">未找到报告</string>
+    <string name="result_report_id">报告编号：%1$s</string>
+    <string name="result_title">跑分结果</string>
+    <string name="result_standard_test">标准测试</string>
+    <string name="result_export">导出</string>
+    <string name="result_share">分享</string>
+    <string name="result_gemmark_score">GEMMARK 得分</string>
+    <string name="result_sub_decode">解码</string>
+    <string name="result_sub_prefill">预填</string>
+    <string name="result_sub_response">响应</string>
+    <string name="result_sub_reasoning">推理</string>
+    <string name="result_sub_stability">稳定性</string>
+    <string name="result_weights_footnote" formatted="false">权重：解码 35% · 推理 20% · 预填/响应/稳定性各 15%（几何平均；缺失维度自动归一）</string>
+    <string name="result_anchor_footnote">1000 分 ≡ 锚点 v2：解码 10 tok/s · 预填 500 tok/s · TTFT 500 ms · 推理 10 tok/s · 零衰减</string>
+    <string name="device_result_missing">未找到该设备测试</string>
+    <string name="device_result_fast">Preview · Fast</string>
+    <string name="device_result_simulated">模拟引擎</string>
+    <string name="device_result_full">Preview · Full</string>
+    <string name="device_result_formula">设备总分 = 加权几何平均：Fast 45% · Full 45% · 模型切换加载 10%（缺失维度自动归一）。切换加载为置换读取——每次都在另一模型占据 AICore 后加载。</string>
+    <string name="device_result_switch_load">模型切换</string>
+    <string name="device_result_switch_load_detail">中位 %1$.1f 秒 · %2$d 次加载</string>
+    <string name="device_result_switch_not_scored">仅参考 — 两模型共享权重（嵌套架构），无置换读取可测</string>
+    <string name="device_result_export">导出设备报告</string>
+    <string name="device_result_export_desc">整场测试一个文件：设备总分 + 两个模型的完整报告（JSON），或合并的逐轮数据表（CSV）。</string>
+    <string name="result_ttft_retried_warning">⚠ TTFT 包含重试轮次</string>
+    <string name="result_median_decode">解码中位数</string>
+    <string name="result_trimmed_mean" formatted="false">10% 截尾均值</string>
+    <string name="result_std_dev">标准差</string>
+    <string name="result_p10_p90">P10 / P90</string>
+    <string name="result_ttft_median">TTFT 中位数</string>
+    <string name="result_ttft_clean">TTFT（%1$d 轮无重试）</string>
+    <string name="result_thermal_drop">热衰减</string>
+    <string name="result_workload_breakdown">工作负载明细</string>
+    <string name="result_rounds_ok">%1$d/%2$d 正常</string>
+    <string name="result_chart_decay">解码速度衰减</string>
+    <string name="result_rounds_count">%1$d 轮</string>
+    <string name="result_chart_temp">每轮温度</string>
+    <string name="result_max_value">最高 %1$s</string>
+    <string name="result_table_round">轮次</string>
+    <string name="result_table_ttft">TTFT ms</string>
+    <string name="result_table_decode">解码</string>
+    <string name="result_table_status">状态</string>
+    <string name="result_no_rounds">暂无轮次记录</string>
+    <string name="result_detail_run_id">运行 ID</string>
+    <string name="result_detail_app">应用版本</string>
+    <string name="result_detail_token_counter">Token 计数器</string>
+    <string name="result_detail_model_load">模型加载</string>
+    <string name="result_detail_sampling">采样</string>
+    <string name="result_detail_valid_rounds">有效轮次</string>
+    <string name="result_detail_battery_drop">电量消耗</string>
+    <string name="result_status_needs_retest">需要重测</string>
+    <string name="result_status_needs_retest_detail">有效轮次少于要求 — 按规范需重新运行该组测试。</string>
+    <string name="result_status_aborted">已中止</string>
+    <string name="result_status_aborted_detail">运行提前停止，仅保留部分数据。</string>
+    <string name="result_status_failed">失败</string>
+    <string name="result_status_failed_detail">运行遇到致命错误。</string>
+
+    <!-- Export dialog -->
+    <string name="dialog_export_title">导出格式</string>
+    <string name="dialog_export_body">JSON 包含完整报告（轮次、遥测数据、日志）；CSV 包含每轮数据表。</string>
+    <string name="dialog_export_json">JSON</string>
+    <string name="dialog_export_csv">CSV</string>
+
+    <!-- Welcome / onboarding -->
+    <string name="welcome_subtitle">Gemini Nano 端侧 AI 跑分应用</string>
+    <string name="welcome_step1_title">加入 AICore 开发者预览计划</string>
+    <string name="welcome_step1_body">预览版模型（Gemma 4 / nano-v4）通过 Google 实验计划分发。请使用本设备登录的 Google 账号加入群组并成为测试人员。</string>
+    <string name="welcome_google_group">Google 群组</string>
+    <string name="welcome_become_tester">成为测试人员</string>
+    <string name="welcome_step2_title">将模型下载到本设备</string>
+    <string name="welcome_step2_body">模型通过 Wi-Fi 下载，可能需要几分钟。下方状态实时更新 — 标记为可下载的模型可直接在此获取。</string>
+    <string name="welcome_download">下载</string>
+    <string name="welcome_step3_title">运行标准测试</string>
+    <string name="welcome_step3_body">一键开始，完整套件自动在两个 Gemma 4 模型上依次运行（先 Fast 后 Full），综合为一个设备总分，约 12 分钟。请保持应用在前台，实时观看模型的思考过程。</string>
+    <string name="welcome_get_started">开始使用</string>
+
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="settings_back">返回</string>
+    <string name="settings_setup_guide">设置引导</string>
+    <string name="settings_setup_guide_subtitle">模型下载与 AICore 预览计划加入步骤</string>
+    <string name="settings_group_title">aicore-experimental Google Group</string>
+    <string name="settings_group_subtitle">使用本设备上的账号加入</string>
+    <string name="settings_testing_title">Android AICore 测试计划</string>
+    <string name="settings_testing_subtitle">成为测试人员以接收预览版本</string>
+    <string name="settings_anchor_info">Score anchor: %1$s · 1000 pts ≡ 10 tok/s decode · 500 tok/s prefill · 500 ms TTFT · no decay</string>
+    <string name="run_thinking_indicator">思考模式进行中</string>
+    <string name="run_test_image_desc">模型正在识别的基准测试图片</string>
+</resources>

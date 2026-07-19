@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">Gemmark</string>
+
+    <!-- Home -->
+    <string name="home_settings">Settings</string>
+    <string name="home_run_benchmark">Run benchmark</string>
+    <string name="home_recent_runs">Recent runs</string>
+    <string name="home_no_runs_title">No runs yet</string>
+    <string name="home_no_runs_caption">Results appear here after your first benchmark.</string>
+    <string name="home_benchmark_in_progress">Benchmark in progress</string>
+    <string name="home_active_run_detail">%1$s · round %2$d</string>
+    <string name="home_open">Open</string>
+    <string name="home_gemmark_score">GEMMARK SCORE</string>
+    <string name="home_device_score">DEVICE SCORE</string>
+    <string name="home_device_run_title">Standard Test · both models</string>
+    <string name="home_coverage_partial">Partial — only one model was available</string>
+    <string name="home_coverage_mock">Simulated demo — not a real device score</string>
+    <string name="home_device">Device</string>
+    <string name="home_device_build">Build %1$s · API %2$d</string>
+    <string name="home_device_build_aicore">Build %1$s · API %2$d · AICore %3$s</string>
+    <string name="home_test_conditions">Test conditions</string>
+    <string name="home_status_needs_retest">Needs retest</string>
+    <string name="home_status_aborted">Aborted</string>
+    <string name="home_status_failed">Failed</string>
+    <string name="home_toks_median">tok/s median</string>
+
+    <!-- Preflight check labels (mapped from PreflightCheck.id) -->
+    <string name="preflight_battery">Battery ≥ %1$d%%</string>
+    <string name="preflight_charging">Not charging</string>
+    <string name="preflight_thermal">Device cool</string>
+    <string name="preflight_powersave">Battery saver off</string>
+    <string name="preflight_brightness">Fixed brightness &amp; refresh rate</string>
+    <string name="preflight_background">Background apps closed</string>
+    <string name="preflight_room">Consistent room temperature</string>
+
+    <!-- Start benchmark sheet -->
+    <string name="sheet_standard_test">Standard Test</string>
+    <string name="sheet_standard_test_desc">Runs the full suite on both Gemma 4 models — Fast, then Full — and combines them into one Device Score. About 12 minutes; keep the app in the foreground.</string>
+    <string name="sheet_partial_note">Only one model is ready — the Device Score will be marked partial.</string>
+    <string name="sheet_mock_note">AICore models are unavailable on this device — a simulated demo will run instead.</string>
+    <string name="sheet_start">Start</string>
+
+    <!-- Preflight dialog -->
+    <string name="dialog_preflight_title">Test conditions not met</string>
+    <string name="dialog_preflight_item">• %1$s — %2$s</string>
+    <string name="dialog_preflight_note">Results from this run will not be comparable with compliant runs.</string>
+    <string name="dialog_preflight_run_anyway">Run anyway</string>
+    <string name="dialog_preflight_cancel">Cancel</string>
+
+    <!-- Run screen -->
+    <string name="run_headline_loading">Loading model…</string>
+    <string name="run_headline_warmup">Warming up…</string>
+    <string name="run_headline_testing">Testing in progress…</string>
+    <string name="run_headline_paused">Paused</string>
+    <string name="run_headline_cooldown">Cooling down</string>
+    <string name="run_model_step">Model %1$d/%2$d</string>
+    <string name="run_headline_saving">Saving report…</string>
+    <string name="run_headline_default">Benchmark</string>
+    <string name="run_phase">phase %1$d/%2$d</string>
+    <string name="run_ring_warmup">WARM-UP %1$d</string>
+    <string name="run_ring_round">ROUND %1$d</string>
+    <string name="run_stat_ttft">TTFT</string>
+    <string name="run_stat_decode">Decode</string>
+    <string name="run_live_results">Live results</string>
+    <string name="run_thermal">Thermal</string>
+    <string name="run_thermal_status">Thermal status: %1$s</string>
+    <string name="run_power_draw">Power draw</string>
+    <string name="run_activity_log">Activity Log</string>
+    <string name="run_log_waiting">Waiting for events…</string>
+    <string name="unit_tok_s">tok/s</string>
+    <string name="unit_ms">ms</string>
+    <string name="run_pause">Pause</string>
+    <string name="run_resume">Resume</string>
+    <string name="run_stop">Stop</string>
+    <string name="run_no_report_saved">Benchmark ended but no report was saved.</string>
+
+    <!-- Run dialogs -->
+    <string name="dialog_run_failed_title">Benchmark failed</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_stop_title">Stop benchmark?</string>
+    <string name="dialog_stop_body">The run will be saved as aborted. Partial rounds stay available but the report is excluded from the leaderboard.</string>
+    <string name="dialog_stop_confirm">Stop run</string>
+    <string name="dialog_stop_keep">Keep running</string>
+
+    <!-- Phase chip labels (run screen ring) -->
+    <string name="chip_phase_loading">LOADING</string>
+    <string name="chip_phase_warmup">WARM-UP</string>
+    <string name="chip_phase_measuring">OK</string>
+    <string name="chip_phase_paused">PAUSED</string>
+    <string name="chip_phase_saving">SAVING</string>
+
+    <!-- Round status chips -->
+    <string name="chip_status_ok">OK</string>
+    <string name="chip_status_retried">Retried</string>
+    <string name="chip_status_short">Short</string>
+    <string name="chip_status_fallback">Fallback</string>
+    <string name="chip_status_error">Error</string>
+
+    <!-- Result screen -->
+    <string name="result_back">Back</string>
+    <string name="result_report_not_found">Report not found</string>
+    <string name="result_report_id">REPORT ID: %1$s</string>
+    <string name="result_title">Benchmark Result</string>
+    <string name="result_standard_test">Standard Test</string>
+    <string name="result_export">Export</string>
+    <string name="result_share">Share</string>
+    <string name="result_gemmark_score">GEMMARK SCORE</string>
+    <string name="result_sub_decode">Decode</string>
+    <string name="result_sub_prefill">Prefill</string>
+    <string name="result_sub_response">Response</string>
+    <string name="result_sub_reasoning">Reasoning</string>
+    <string name="result_sub_stability">Stability</string>
+    <string name="result_weights_footnote" formatted="false">Weights: decode 35% · reasoning 20% · prefill/response/stability 15% each (geometric mean; missing dimensions renormalize)</string>
+    <string name="result_anchor_footnote">1000 pts ≡ anchor v2: 10 tok/s decode · 500 tok/s prefill · 500 ms TTFT · 10 tok/s reasoning · no decay</string>
+    <string name="device_result_missing">Device run not found</string>
+    <string name="device_result_fast">Preview · Fast</string>
+    <string name="device_result_simulated">Simulated engine</string>
+    <string name="device_result_full">Preview · Full</string>
+    <string name="device_result_formula">Device Score = weighted geometric mean: Fast 45% · Full 45% · model-switch Load 10% (missing dimensions renormalize). Switch loads are displacement reads — each model is loaded right after the other occupied AICore.</string>
+    <string name="device_result_switch_load">Model switch</string>
+    <string name="device_result_switch_load_detail">median %1$.1f s · %2$d loads</string>
+    <string name="device_result_switch_not_scored">Reference only — models share weights (nested), no displacement read to measure</string>
+    <string name="device_result_export">Export device report</string>
+    <string name="device_result_export_desc">One file for the whole session: the Device Score verdict plus both models’ full reports (JSON), or a combined per-round table (CSV).</string>
+    <string name="result_ttft_retried_warning">⚠ TTFT includes retried rounds</string>
+    <string name="result_median_decode">Median Decode</string>
+    <string name="result_trimmed_mean" formatted="false">Trimmed Mean 10%</string>
+    <string name="result_std_dev">Std Dev</string>
+    <string name="result_p10_p90">P10 / P90</string>
+    <string name="result_ttft_median">TTFT Median</string>
+    <string name="result_ttft_clean">TTFT (%1$d clean rounds)</string>
+    <string name="result_thermal_drop">Thermal Drop</string>
+    <string name="result_workload_breakdown">Workload breakdown</string>
+    <string name="result_rounds_ok">%1$d/%2$d ok</string>
+    <string name="result_chart_decay">Decode Speed Decay</string>
+    <string name="result_rounds_count">%1$d rounds</string>
+    <string name="result_chart_temp">Temperature per Round</string>
+    <string name="result_max_value">Max %1$s</string>
+    <string name="result_table_round">Round</string>
+    <string name="result_table_ttft">TTFT ms</string>
+    <string name="result_table_decode">Decode</string>
+    <string name="result_table_status">Status</string>
+    <string name="result_no_rounds">No rounds recorded</string>
+    <string name="result_detail_run_id">Run ID</string>
+    <string name="result_detail_app">App</string>
+    <string name="result_detail_token_counter">Token counter</string>
+    <string name="result_detail_model_load">Model load</string>
+    <string name="result_detail_sampling">Sampling</string>
+    <string name="result_detail_valid_rounds">Valid rounds</string>
+    <string name="result_detail_battery_drop">Battery drop</string>
+    <string name="result_status_needs_retest">Needs retest</string>
+    <string name="result_status_needs_retest_detail">Fewer than the required valid rounds — the spec requires re-running this group.</string>
+    <string name="result_status_aborted">Aborted</string>
+    <string name="result_status_aborted_detail">The run was stopped early; partial data only.</string>
+    <string name="result_status_failed">Failed</string>
+    <string name="result_status_failed_detail">The run hit a fatal error.</string>
+
+    <!-- Export dialog -->
+    <string name="dialog_export_title">Export format</string>
+    <string name="dialog_export_body">JSON contains the full report (rounds, telemetry, log). CSV contains the per-round table.</string>
+    <string name="dialog_export_json">JSON</string>
+    <string name="dialog_export_csv">CSV</string>
+
+    <!-- Welcome / onboarding -->
+    <string name="welcome_subtitle">On-device AI benchmark for Gemini Nano</string>
+    <string name="welcome_step1_title">Join the AICore Developer Preview</string>
+    <string name="welcome_step1_body">Preview models (Gemma 4 / nano-v4) ship through Google\'s experimental program. Join the group and become a tester with the Google account on this device.</string>
+    <string name="welcome_google_group">Google Group</string>
+    <string name="welcome_become_tester">Become a tester</string>
+    <string name="welcome_step2_title">Get the models on this device</string>
+    <string name="welcome_step2_body">Models download over Wi-Fi and can take a few minutes. Status below is live — anything marked downloadable can be fetched right here.</string>
+    <string name="welcome_download">Download</string>
+    <string name="welcome_step3_title">Run the Standard Test</string>
+    <string name="welcome_step3_body">One button runs the full suite on both Gemma 4 models — Fast, then Full — for one combined Device Score, about 12 minutes. Keep the app in the foreground and watch the models think in real time.</string>
+    <string name="welcome_get_started">Get started</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_back">Back</string>
+    <string name="settings_setup_guide">Setup guide</string>
+    <string name="settings_setup_guide_subtitle">Model downloads and the AICore preview enrollment steps</string>
+    <string name="settings_group_title">aicore-experimental Google Group</string>
+    <string name="settings_group_subtitle">Join with the account used on this device</string>
+    <string name="settings_testing_title">Android AICore testing program</string>
+    <string name="settings_testing_subtitle">Become a tester to receive preview builds</string>
+    <string name="settings_anchor_info">Score anchor: %1$s · 1000 pts ≡ 10 tok/s decode · 500 tok/s prefill · 500 ms TTFT · no decay</string>
+    <string name="run_thinking_indicator">Thinking mode active</string>
+    <string name="run_test_image_desc">Benchmark test image the model is describing</string>
+</resources>
