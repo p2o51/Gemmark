@@ -2,7 +2,7 @@
 
 On-device LLM benchmark app (Android · Kotlin · Jetpack Compose · Material 3).
 Implements the workflow frozen in **“03 · Gemmark — Gemini Nano 4 Benchmark App”**
-and **“Gemmark 测试规范 v1”** (Notion).
+and **“Gemmark Benchmark Specification v1”** (Notion).
 
 ## What it measures
 
@@ -99,7 +99,7 @@ core/       models (spec JSON schema), Statistics, PromptRepository (v1 corpus),
 engine/     InferenceEngine abstraction
             ├─ MockInferenceEngine   — simulated streaming/BUSY/short/fallback/decay (works anywhere)
             └─ AiCoreInferenceEngine — Track A seam, WIRED ON DEVICE (see below)
-telemetry/  TelemetryMonitor (battery/thermal), PowerSampler (1 Hz), PreflightChecker (固定条件)
+telemetry/  TelemetryMonitor (battery/thermal), PowerSampler (1 Hz), PreflightChecker (fixed preconditions)
 runner/     BenchmarkRunner (round state machine) + BenchmarkSessionManager (survives navigation)
 data/       RunRepository (one JSON file per run) + Exporters (JSON/CSV share sheet)
 ui/         Multi-activity (Main/Run/Result/Welcome/Settings) · Canvas charts · GSF/GS Code · tonal M3
